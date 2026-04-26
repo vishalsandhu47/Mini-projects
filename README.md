@@ -1,5 +1,4 @@
 # Mini-projects
-<br>
 project 1: ATM
 <br>
 project 2: Game
