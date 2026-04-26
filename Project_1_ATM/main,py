@@ -1,0 +1,27 @@
+from services.atm_service import ATMService
+
+atm = ATMService()
+
+while True:
+    print("\n========== ATM MENU ==========")
+    print("1. Display Balance")
+    print("2. Deposit Money")
+    print("3. Withdraw Money")
+    print("4. Statement")
+    print("5. Exit")
+
+    choice = input("Enter your choice: ")
+
+    if choice == "1":
+        atm.display_balance()
+    elif choice == "2":
+        atm.deposit_money()
+    elif choice == "3":
+        atm.withdraw_money()
+    elif choice == "4":
+        atm.show_statement()
+    elif choice == "5":
+        print("Thank you for using ATM.")
+        break
+    else:
+        print("Invalid choice. Please try again.")
